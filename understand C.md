@@ -3,3 +3,4 @@
 2、源代码、目标代码、可执行代码
   content written in C language
   include machine langeage code
+long long占64位，long占32位，short占15位，ing占16位或32位
