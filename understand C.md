@@ -1,0 +1,5 @@
+1、可移植性
+  C program can run on other systems.
+2、源代码、目标代码、可执行代码
+  content written in C language
+  include machine langeage code
