@@ -17,5 +17,13 @@
     C只保证指向数组任意元素的指针和指向数组后面第1个位置的指针有效。
     不要解引用未初始化的指针。
     两个不同类型的指针不能互相赋值
+    相同声明
+        typedef int arr4[4];//arr4是一个内含4个int的数组
+        typedef arr4 arr3x4[3];//arr3x4是一个内含3个arr4的数组
+        int sum2(arr3x4 ar, int rows);
+        int sum2(int ar[3][4], int rows);
+        int sum2(int ar[][4], int rows);
+        int sum2(int (*ar)[4], int rows);
 9、const
     可以把const和非const数据指向const指针，不可以把const数据指向普通指针。
+    
