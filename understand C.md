@@ -26,4 +26,6 @@
         int sum2(int (*ar)[4], int rows);
 9、const
     可以把const和非const数据指向const指针，不可以把const数据指向普通指针。
-    
+10、数组
+    复合字面量：(int [2])(10, 20)
+    好处：把信息传入函数前不必先创建数组
