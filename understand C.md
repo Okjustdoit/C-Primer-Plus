@@ -52,3 +52,4 @@
         由于寄存器变量存储在寄存器中而非内存中，所以无法获取寄存器变量的地址
     静态变量（static variable）
         静态的意思是该变量在内存在原地不动，不是说它的值不变
+    C有6个关键字作为存储类别说明符：auto, register, static, extern, _Thread_local, typedef
