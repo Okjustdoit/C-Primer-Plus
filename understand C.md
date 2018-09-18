@@ -54,6 +54,7 @@
         静态的意思是该变量在内存在原地不动，不是说它的值不变
     C有6个关键字作为存储类别说明符：auto, register, static, extern, _Thread_local, typedef
 14、分配内存：malloc()/calloc和free()
+    #include <stdlib.h>
     创建一维数组
         double * ptd;
         ptd = (double *) malloc(30 * sizeof(double));
