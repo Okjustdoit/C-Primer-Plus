@@ -24,8 +24,11 @@
         int sum2(int ar[3][4], int rows);
         int sum2(int ar[][4], int rows);
         int sum2(int (*ar)[4], int rows);
-9、const
+9、const类型限定符
     可以把const和非const数据指向const指针，不可以把const数据指向普通指针。
+    const float * pf;
+    float * const pf;
+    const放在*左侧任意位置，限定了指针指向的数据不能改变，const放在*右侧，限定指针本身不能改变，也就是指针指向的地址不能改变
 10、数组
     复合字面量：(int [2])(10, 20)
     好处：把信息传入函数前不必先创建数组
