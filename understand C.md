@@ -53,3 +53,12 @@
     静态变量（static variable）
         静态的意思是该变量在内存在原地不动，不是说它的值不变
     C有6个关键字作为存储类别说明符：auto, register, static, extern, _Thread_local, typedef
+14、分配内存：malloc()/calloc和free()
+    创建一维数组
+        double * ptd;
+        ptd = (double *) malloc(30 * sizeof(double));
+    创建二维数组
+        int (* p2)[6];
+        int (* p3)[m];
+        p2 = (int *) malloc(n * 6 * sizeof(int));//nx6 数组
+        p3 = (int *) malloc(n * m * sizeof(int));//nxm 数组(要求支持边长数组）
