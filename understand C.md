@@ -82,3 +82,10 @@
     ch = getchar();//从标准输入中获取一个字符
     ch = getc(fp);//从fp指定的文件中获取一个字符
     putc(ch, stdout)与putchar(ch)的作用相同
+    fseek()和ftell()工作原理
+        fseek(fp, 0L, SEEK_SET);//定位至文件开始处
+        fseek(fp, 2L, SEEK_CUR);//从文件当前位置前移2个字节
+        fseek(fp, -10L, SEEK_END);//从文件尾处回退10个字节
+        
+        last = ftell(fp);
+        ftell()函数的返回类型是long,它返回的是当前位置，通过返回距文件开始处的字节数来确定文件的位置
