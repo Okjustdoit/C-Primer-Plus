@@ -46,6 +46,9 @@
     const char ar1[] = "How to learning?"
     初始化数组吧静态存储区的字符拷贝到数组中，而初始化指针只把字符串的地址拷贝给指针，两者主要区别：数组名是常量，而指针名是变量
     读取字符串函数：scanf(), gets()和 fgets()
+        fgets(words, STLEN，stdin);
+    输出字符串函数：printf(), puts()和 fputs()
+        fputs(words, stdout);
     strlen()函数用于统计字符串长度
     strcat()函数用于拼接字符串
     strcmp()函数比较的是字符串，不是字符，参数是字符串
