@@ -103,4 +103,6 @@
     
     fread(&value, sizeof(double), 1, iofile);
 16、结构体
-	
+    指向结构体的指针struct guy *him;
+    传递结构的地址double sum(const struct funds * money)
+	传递结构double sum(struct funds moolah)
