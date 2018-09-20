@@ -102,3 +102,5 @@
 	fclose(iofile);
     
     fread(&value, sizeof(double), 1, iofile);
+16、结构体
+	
