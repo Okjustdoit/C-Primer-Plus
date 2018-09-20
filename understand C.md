@@ -92,3 +92,13 @@
     标准I/O机理
         fopen()函数“打开一个流”，如果以文本文件打开该文件，就获得一个文本流，如果以二进制模式打开该文件，就获得一个二进制流
         输入函数: fscanf(), getc(), fgets()
+    //以二进制格式把数组写入文件
+    /*
+    *写入地址：numbers
+    *数据块数量：ARSIZE
+    *指定代写入的文件：iofile
+    */
+	fwrite(numbers, sizeof(double), ARSIZE, iofile);
+	fclose(iofile);
+    
+    fread(&value, sizeof(double), 1, iofile);
