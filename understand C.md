@@ -106,7 +106,7 @@
     指向结构体的指针struct guy *him;
     传递结构的地址double sum(const struct funds * money)
 	传递结构double sum(struct funds moolah)
-    malloc()
+    16.1malloc()
     void getinfo (struct namect * pst)
     {
         char temp[SLEN];
@@ -116,9 +116,20 @@
         //把名拷贝到已分配的内存
         strcpy(pst->fname, temp);
     }
-    复合字面量和结构
+    16.2复合字面量和结构
     /*
      *函数名：rect_area
      *结构名：rect
     */
     area = rect_area( (struct rect) {10.5,20.0}
+    163.伸缩型数组成员
+    伸缩型数组成员必须是结构的最后一个成员
+	结构中必须至少有一个成员
+	伸缩数组的声明类似普通数组，只是它的方括号中是空的
+	struct flex
+	{
+		int count;
+		double average;
+		double scores[];//伸缩型数组成员
+	}
+	16.4匿名结构
