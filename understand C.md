@@ -106,3 +106,19 @@
     指向结构体的指针struct guy *him;
     传递结构的地址double sum(const struct funds * money)
 	传递结构double sum(struct funds moolah)
+    malloc()
+    void getinfo (struct namect * pst)
+    {
+        char temp[SLEN];
+        s_gets(temp, SLEN);
+        //分配内存储存名
+        pts->fname = (char *)malloc(strlen(temp) + 1);
+        //把名拷贝到已分配的内存
+        strcpy(pst->fname, temp);
+    }
+    复合字面量和结构
+    /*
+     *函数名：rect_area
+     *结构名：rect
+    */
+    area = rect_area( (struct rect) {10.5,20.0}
