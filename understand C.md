@@ -144,3 +144,9 @@
 	声明符号名称来表示常量，使用enum关键字
 	enum spectrum {red, orange, yellow, green, blue, biolet};
 	enum spectrum color;
+19、typedef
+	为某一类型自定义名称
+	与#define有3处不同
+	typedef创建的符号名只受限于类型，不能用于值
+	typedef由编译器解释，不是处理器
+	在其受限范围内，typedef不#define更灵活
