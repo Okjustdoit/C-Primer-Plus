@@ -152,3 +152,7 @@
 	在其受限范围内，typedef不#define更灵活
 20、优先级
 	[]和()具有相同的优先级，它们比*的优先级高
+21、函数和指针
+	void (*fp)(char *);//fp是一个指向函数的指针
+	void ToUpper(char *);
+	pf = ToUpper;
