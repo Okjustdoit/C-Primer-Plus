@@ -133,5 +133,14 @@
 		double scores[];//伸缩型数组成员
 	}
 	16.4匿名结构
-17、联合
-联合是一种数据类型，它能在同一个内存空间中储存不同的数据类型（不是同时储存）
+17、联合union
+	联合是一种数据类型，它能在同一个内存空间中储存不同的数据类型（不是同时储存）
+	union hold{
+		int digit;
+		double bigfl;
+		char letter;
+	}
+18、枚举
+	声明符号名称来表示常量，使用enum关键字
+	enum spectrum {red, orange, yellow, green, blue, biolet};
+	enum spectrum color;
