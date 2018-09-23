@@ -156,3 +156,7 @@
 	void (*fp)(char *);//fp是一个指向函数的指针
 	void ToUpper(char *);
 	pf = ToUpper;
+22、移位运算符
+	左移：左侧运算对象移出左末端位的值丢失，在右端用0填充
+	number << n; //number乘2的n次幂
+	number >> n; //如果number为非负，则用number除以2的n次幂
