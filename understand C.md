@@ -160,5 +160,16 @@
 	左移：左侧运算对象移出左末端位的值丢失，在右端用0填充
 	number << n; //number乘2的n次幂
 	number >> n; //如果number为非负，则用number除以2的n次幂
-	位字段：是一个signed int或unsigned int类型变量中的一组相邻的位，位字段通过一个
-	结构声明来建立，该结构声明为每个字段提供标签，并确定该字段的宽度
+	
+	位字段：
+	是一个signed int或unsigned int类型变量中的一组相邻的位，位字段通过一个结构声明来建立，该结构声明为每个字段提供标签，并确定该字段的宽度
+	声明建立一个4个1位的字段
+	struct{
+		unsigned int autfd : 1;
+		unsigned int bldfc : 1;
+		unsigned int undln : 1;
+		unsigned int itals : 1;
+	}prnt;
+	赋值
+	prnt.itals = 0;
+	prnt.undln = 1;
