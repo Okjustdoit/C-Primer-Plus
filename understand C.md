@@ -174,3 +174,7 @@
 	赋值
 	prnt.itals = 0;
 	prnt.undln = 1;
+23、C预处理指令和C库
+	泛型选择：指没有特定的类型，但一旦指定一种类型，就可以转换成指定类型的代码
+	_Generic(x, int: 0, float: 1, double: 2, default: 3)
+	_Generic是C11关键字
