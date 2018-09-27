@@ -178,3 +178,11 @@
 	泛型选择：指没有特定的类型，但一旦指定一种类型，就可以转换成指定类型的代码
 	_Generic(x, int: 0, float: 1, double: 2, default: 3)
 	_Generic是C11关键字
+	
+	内联函数
+	内联函数的定义和调用函数的代码必须在同一个文件中
+	inline static void eatline()//内联函数定义/原型
+	inline关键字是唯一函数的说明符
+
+	_Noreturn函数
+	调用完成后函数不返回主调用函数，exit()函数是_Noreturn函数的一个示例
