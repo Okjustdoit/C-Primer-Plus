@@ -186,3 +186,11 @@
 
 	_Noreturn函数
 	调用完成后函数不返回主调用函数，exit()函数是_Noreturn函数的一个示例
+	
+	qsort()函数 （快速排序）
+	void qsort (void *base, size_t nmemb, size_t size,int (*compar)(const void *, const void *));
+	/* *base:数组首元素指针
+	 * nmemb:待排序项的数量，也就是数组元素个数
+	 * size: 数组每个元素占用的空间大小
+	 * *compar: 函数名即函数的地址，用于比较元素
+	qsort(vals, Num, sizeof(double), mycomp);
